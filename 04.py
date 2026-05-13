@@ -5,10 +5,10 @@ grades = [1,2,3,4,5]
 zero = [0, 1, 2, 3]
 
 for c in zero:
-    if c == "Бух.учёт":
+    if course[c] == "Бух.учёт":
         for d in zero:
-            if d == "03.05.26":
+            if dates[d] == "03.05.26":
                 for s in zero:
-                    if s == students[1]:
-                        for g in zero:
-                            print(s,g,c,d)
+                    if students[s] == students[1]:
+                        for g in grades:
+                            print(students[s], g, course[c], dates[d])
